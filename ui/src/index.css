@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "DM Sans", sans-serif;
+    --font-display: "Bebas Neue", sans-serif;
+    
+    --color-slate-950: #000000;
+    --color-slate-900: #0a0a0a;
+    --color-slate-800: #1a1a1a;
+    --color-slate-700: #262626;
+    --color-amber-500: #ffffff;
+}
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  --accent: #ffffff;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .glass {
+    @apply bg-black/50 backdrop-blur-xl border border-white/10;
+  }
+  .text-shadow {
+    text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+

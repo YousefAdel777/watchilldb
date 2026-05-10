@@ -1,0 +1,64 @@
+{
+    "date_modes": {
+        "release_year": 2019.0,
+        "release_month": 1.0,
+        "release_day": 1.0
+    },
+    "season_map": {
+        "12": "Winter",
+        "1": "Winter",
+        "2": "Winter",
+        "3": "Spring",
+        "4": "Spring",
+        "5": "Spring",
+        "6": "Summer",
+        "7": "Summer",
+        "8": "Summer",
+        "9": "Fall",
+        "10": "Fall",
+        "11": "Fall"
+    },
+    "label_map": {
+        "0": "Very Low", "1": "Low", "2": "Medium", "3": "High"
+    },
+    "useless_cols": ["backdrop_path", "id", "poster_path", "title", "original_title","overview","tagline"],
+    "revenue_thresholds": {
+        "blockbuster": 0.0
+    },
+    "cols_to_impute": {
+        "affective_cols": [
+            "movie_valence",
+            "movie_vad_valence",
+            "movie_vad_arousal",
+            "movie_vad_dominance",
+            "movie_intensity_anger",
+            "movie_intensity_anticipation",
+            "movie_intensity_disgust",
+            "movie_intensity_fear",
+            "movie_intensity_joy",
+            "movie_intensity_sadness",
+            "movie_intensity_surprise",
+            "movie_intensity_trust",
+            "movie_scl_shift",
+            "movie_scl_coverage"
+        ],
+        "textual_cols": [
+            "title",
+            "homepage",
+            "imdb_id",
+            "overview",
+            "tagline",
+            "genres",
+            "production_companies",
+            "production_countries",
+            "spoken_languages",
+            "original_title",
+            "poster_path"
+        ],
+        "numeric_cols": [
+            "runtime", 
+            "vote_count",
+            "revenue"
+        ]
+    }
+}
